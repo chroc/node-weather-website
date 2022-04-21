@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             const feelsLike = body.current.feelslike;
             const humidity = body.current.humidity;
             const uvIndex = body.current.uv_index;
-            console.log(body.current);
+            // console.log(body.current);
             const message = weatherDescription + ' .It is currently ' + temperature + '°C out. It feels like ' + feelsLike + '°C out. Humidity: ' + humidity + '%. UV index: ' + uvIndex;
             callback(undefined, message);
         }
