@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
             const humidity = body.current.humidity;
             const uvIndex = body.current.uv_index;
             // console.log(body.current);
-            const message = weatherDescription + ' .It is currently ' + temperature + '°C out. It feels like ' + feelsLike + '°C out. Humidity: ' + humidity + '%. UV index: ' + uvIndex;
+            const message = weatherDescription + '. It is currently ' + temperature + '°C out. It feels like ' + feelsLike + '°C out. Humidity: ' + humidity + '%. UV index: ' + uvIndex;
             callback(undefined, message);
         }
     });
